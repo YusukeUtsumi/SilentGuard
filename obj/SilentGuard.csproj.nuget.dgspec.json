@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ProgramData\\SilentGuard\\SilentGuard.csproj": {}
+    "/Users/yusukeutsumi/Documents/SilentGuard/SilentGuard.csproj": {}
   },
   "projects": {
-    "C:\\ProgramData\\SilentGuard\\SilentGuard.csproj": {
+    "/Users/yusukeutsumi/Documents/SilentGuard/SilentGuard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ProgramData\\SilentGuard\\SilentGuard.csproj",
+        "projectUniqueName": "/Users/yusukeutsumi/Documents/SilentGuard/SilentGuard.csproj",
         "projectName": "SilentGuard",
-        "projectPath": "C:\\ProgramData\\SilentGuard\\SilentGuard.csproj",
-        "packagesPath": "C:\\Users\\u-dev\\.nuget\\packages\\",
-        "outputPath": "C:\\ProgramData\\SilentGuard\\obj\\",
+        "projectPath": "/Users/yusukeutsumi/Documents/SilentGuard/SilentGuard.csproj",
+        "packagesPath": "/Users/yusukeutsumi/.nuget/packages/",
+        "outputPath": "/Users/yusukeutsumi/Documents/SilentGuard/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\u-dev\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/yusukeutsumi/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -38,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -69,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
