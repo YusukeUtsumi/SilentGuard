@@ -50,4 +50,38 @@ SilentGuardは、Windows環境において新規作成・変更されたファ�
 ## 5. 対象ファイル拡張子
 
 以下の拡張子を「危険ファイル候補」として処理対象とする：
+.exe, .dll, .sys, .bat, .cmd, .txt, .ps1, .vbs, .js, .py, .wsf, .msi, .scr, .com
 
+---
+
+## 6. ディレクトリ構成
+
+| パス | 用途 |
+|------|------|
+| `C:\ProgramData\SilentGuard\Quarantine\` | 隔離ファイル保管先 |
+| `C:\ProgramData\SilentGuard\log\` | スキャンログ保存先 |
+| `config.json` | スキャンエンジンのパス指定用（`scanEngine1`, `scanEngine2`） |
+
+---
+
+## 7. 外部連携（スキャンエンジン）
+
+- **入力：**  
+  引数 `-Scan -ScanType 3 -File "path"` を指定して外部プロセス実行
+
+- **出力：**  
+  標準出力に「Threat found」や「脅威が見つかりました」の文字列で判定
+
+---
+
+## 8. ログ仕様
+
+- **出力例：**
+2025-06-13 12:30:15 | C:\Users\xxx\evil.exe | SHA256=abc123... | Threat=有 | Action=Quarantine
+
+---
+
+## 9. 非機能要件
+
+- メモリ使用量：常駐時 約4MB  
+- 処理遅延：スキャン・ログ出力まで1〜2秒以内
